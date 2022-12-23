@@ -35,7 +35,7 @@ elForm.addEventListener("submit", (evt) => {
 });
 
 elDeletedBtn.addEventListener("click", () => {
-  elInfo.textContent = "";
+  elInfo.classList.add("d-none");
 });
 
 elEditBtn.addEventListener("click", () => {
