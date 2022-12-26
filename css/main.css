@@ -1,3 +1,8 @@
+
+body {
+    transition: all .4s ease;
+}
+
 .shadows {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -6,3 +11,39 @@
     min-height: 150px;
 }
 
+.modal__friend {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: rgb(58, 87, 218);
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translateY(-150%);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.open__modal {
+    transform: translateY(20%);
+    color: rgba(175, 165, 153, 0.733);
+}
+
+
+
+.close__modal {
+    transform: translateY(-150%);
+}
+
+.fa-xmark {
+    top: 15px;
+    color: #fff;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
