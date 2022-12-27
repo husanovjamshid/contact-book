@@ -1,6 +1,7 @@
 
 body {
     transition: all .4s ease;
+    scroll-behavior: smooth;
 }
 
 .shadows {
@@ -46,4 +47,146 @@ body {
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.up__btn {
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #198d91;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.fav__btn {
+
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #ff0800;
+    background-color: rgb(255, 254, 254);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.dark__light {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 999;
+}
+
+.dark__mode {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #198d91;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.light__mode {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #198d91;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.mode__active {
+    background: linear-gradient(270deg,#198d92,#29af9f);
+    box-shadow: none;
+    color: #fff;
+    border-color: linear-gradient(270deg,#198d92,#29af9f);
+}
+
+.dark__mode > .dark__mode-img {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/night-mode.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mode__active > .dark__mode-img {
+    background-image: url('../images/night-mode-white.png');
+}
+
+.light__mode > .light__mode-img {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/sun.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mode__active > .light__mode-img {
+    background-image: url('../images/sun-white.png');
+}
+
+.dark__light {
+    position: fixed;
+    bottom: 15px;
+    left: 9px;
+}
+
+.up__btn {
+    bottom: 25px;
+    right: 9px;
+}
+
+.up__img {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.cards {
+    background-color: #fff;
+}
+
+.dark__color {
+    color: #fff;
+}
+
+.contact__color {
+    color: #fff;
+}
+
+.newCon__color {
+    color: #fff;
 }

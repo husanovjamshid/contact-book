@@ -31,18 +31,18 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <input type="number" class="form-control modal-phone" placeholder="Phone">
+                    <input type="number"  minlength="9" class="form-control modal-phone" placeholder="Phone">
                 </div>
                 
                 <button type="submit" class="btn btn-warning">Change <i class="fa-solid fa-check ms-2"></i></button>
             </form>
         </div>
         
-        <h1 class="h1 text-center my-5">Contact Book</h1>
+        <h1 class="h1 text-center my-5 dark__color">Contact Book</h1>
         
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <h2>New contact</h2>
+                <h2 class="newCon__color">New contact</h2>
                 <form class="js-form">
                     <div class="mb-3">  
                         <input type="text" class="form-control js-input" placeholder="Name">
@@ -58,7 +58,7 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <input type="number" class="form-control js-phone" placeholder="Phone">
+                        <input type="number" minlength="9" class="form-control js-phone" placeholder="Phone">
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Add contact <i class="fa-sharp fa-solid fa-user-plus ms-2"></i></button>
@@ -69,14 +69,27 @@
                 </div>
             </div>
             <div class="col-md-6  col-lg-6">
-                <h2>Contacts</h2>
+                <h2 class="contact__color">Contacts</h2>
                 <div class="cards  border border-2 rounded-2 js-contact">
                     
                 </div>
                 
             </div>
         </div>
+     
+        <div class="dark__light">
+            <div class="dark__mode ">
+                <span class="dark__mode-img"></span>
+            </div>
+            <div class="light__mode mode__active">
+                <span class="light__mode-img"></span>
+            </div>
+        </div>
         
+        <a href="#" class="up__btn">
+            <img class="up__img" src="./images/upload.png"  alt="arrow up">
+        </a>
+    </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
